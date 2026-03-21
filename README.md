@@ -24,12 +24,12 @@ Foodidy is a full-stack food delivery web application that enables users to brow
 
 ## Project Structure
 
-Foodidy/
-├── frontend/        # React application
-├── backend/         # Mock backend with APIs
-├── components/      # Reusable UI components
-├── pages/           # Application pages
-├── utils/           # Helper functions
+Foodidy
+├── frontend        # React application
+├── backend         # Mock backend with APIs
+├── components      # Reusable UI components
+├── pages           # Application pages
+├── utils           # Helper functions
 
 
 ## Installation and Setup

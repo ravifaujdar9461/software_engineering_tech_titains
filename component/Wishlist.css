@@ -1,0 +1,41 @@
+.wishlist-card {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+  height: 100vh;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.empty-wishlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: #6912ba;
+  height: 70vh;
+}
+
+.empty-wishlist img {
+  width: 260px;
+}
+
+@media (max-width: 768px) {
+  /* Styles for tablet */
+  .wishlist-card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Styles for mobile */
+  .wishlist-card {
+    width: 100%;
+    top: 10rem;
+
+    box-sizing: border-box;
+  }
+}

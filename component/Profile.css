@@ -1,0 +1,198 @@
+/* Common styles for all screen sizes */
+
+.profile-outer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.profile-container {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  margin-bottom: 2rem;
+  width: 100%;
+  margin-top: 6rem;
+  max-width: 30rem; /* Set a maximum width for the container */
+}
+
+.profile-navbar {
+  display: flex;
+  justify-content: center;
+  height: 10%;
+  background-color: #7149c6;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.profile-info-link {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.profile-nav-item {
+  padding: 1rem;
+  font-size: 1.25rem;
+  align-items: center;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+}
+
+.nav-link-active {
+  background-color: var(--blue-200);
+  color: var(--primary-color);
+}
+
+.profile-details-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  grid-gap: 1rem;
+  gap: 1rem;
+  padding: 1.5rem;
+  word-break: break-word; /* Update this property to wrap long words within the container */
+}
+
+.profile-details-item {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  grid-gap: 1rem;
+  max-width: 100%;
+}
+/* Add a max-width property to limit the width of profile details */
+.profile-details-item {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  grid-gap: 1rem;
+  max-width: 100%; /* Adjust the value as needed */
+}
+
+.profile-details-footer {
+  margin-top: 2rem;
+  margin-left: auto;
+}
+
+.profile-details-item-label {
+  color: #838b8d;
+}
+
+.list-stacked {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.address-list {
+  width: 100%;
+  border: none;
+}
+
+.list-stacked-item:last-of-type {
+  border-bottom: 2px dashed #7149c6;
+}
+
+.list-stacked-item {
+  display: flex;
+  gap: 0.5rem;
+  border: 2px dashed #7149c6;
+  border-bottom: none;
+  flex-direction: column;
+}
+
+.list-stacked-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.ph-no-city-section,
+.pin-state-section {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.address-section {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.address-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.list-stacked-item {
+  padding: 1.25rem;
+}
+
+.address-footer button {
+  flex-grow: 1;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #7149c6;
+}
+
+.list-stacked-item {
+  font-size: 20px;
+}
+
+.logout-btn {
+  background-color: red;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Responsive styles for different screen sizes */
+
+@media (max-width: 576px) {
+  /* Styles for mobile screens */
+  .profile-outer-container {
+    top: 130px;
+  }
+
+  .profile-container {
+    max-width: 100%;
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  /* Styles for small tablets */
+  .profile-container {
+    max-width: 20rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  /* Styles for larger tablets */
+  .profile-container {
+    max-width: 25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Styles for desktop screens */
+  .profile-container {
+    max-width: 35rem;
+  }
+}

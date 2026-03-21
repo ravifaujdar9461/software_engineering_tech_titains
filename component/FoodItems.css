@@ -1,0 +1,325 @@
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar-container {
+  position: relative;
+  width: 15%;
+  padding: 20px;
+  padding-top: 80px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.clear:hover {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.sidebar-header span {
+  cursor: pointer;
+}
+
+.sidebar-slider-label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar-slider-item h2 {
+  margin-bottom: 10px;
+}
+
+.sidebar-slider-item input {
+  margin-top: 5px;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.sidebar-category {
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+.sidebar-category-list {
+  margin-top: 5px;
+}
+
+.sidebar-category-list li input {
+  margin: 5px;
+}
+
+.sidebar-rating {
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.sidebar-rating-list {
+  margin-top: 5px;
+}
+
+.sidebar-rating-list li input {
+  margin: 5px;
+}
+
+.sidebar-sortby-price {
+  list-style-type: none;
+}
+
+.sidebar-sortby-price-list {
+  margin-top: 5px;
+}
+
+.sidebar-sortby-price-list li input {
+  margin: 5px;
+}
+
+.food-content {
+  flex: 1; /* Set flex-grow to 1 to allow the content to grow and occupy the available space */
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.food-card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  height: fit-content;
+  position: relative;
+}
+
+.food-card button {
+  width: 100%;
+}
+
+.foodlist {
+  display: flex;
+  flex-wrap: wrap; /* Prevent items from wrapping to the next line */
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-x: auto; /* Add horizontal scrolling when items exceed the container width */
+}
+
+.food-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.food-content-wishlist {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 2.5rem;
+  background-color: #b468fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px;
+  border-bottom-left-radius: 10px;
+}
+
+.cart-wishlist-btn {
+  font-size: 24px;
+
+  transition: color 0.3s;
+}
+
+.food-card a {
+  text-decoration: none;
+  color: black;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.details h3 {
+  margin-bottom: 10px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  height: 80px; /* Set a fixed height for the description container */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.description p {
+  font-size: 18px;
+  line-height: 1.5rem;
+  flex-grow: 2;
+}
+
+.price-container {
+  display: flex;
+  /* justify-content: flex-end; */
+}
+
+.price {
+  margin-left: auto;
+}
+
+.food-items {
+  width: 100%;
+}
+
+.food-items button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #b468fa;
+  border-radius: 5px;
+  border: none;
+  color: #f2f2f2;
+  font-size: 16px;
+}
+
+.no-products {
+  position: relative;
+  top: 80px;
+  margin: 0 auto;
+}
+
+.count {
+  margin-top: 40px;
+  padding: 0px 20px;
+}
+
+.topToBody {
+  position: relative;
+  top: 80px;
+}
+
+.product-details-main {
+  display: flex;
+  grid-gap: 1rem;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.product-details-img-container {
+  max-width: 25rem;
+  padding: 1.5rem;
+  background-color: white;
+  display: grid;
+}
+.product-details-text-container {
+  padding: 0.5rem;
+  max-width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  grid-gap: 0.75rem;
+  gap: 0.75rem;
+}
+
+.product-price-container {
+  display: flex;
+  align-items: center;
+  grid-gap: 1rem;
+  gap: 1rem;
+}
+
+.product-details-footer {
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 0.375rem;
+  gap: 0.375rem;
+}
+
+.product-details-footer button {
+  padding: 0.5rem;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.productlist-card-rating-container {
+  justify-self: start;
+  display: flex;
+  align-items: center;
+  grid-gap: 0.25rem;
+  gap: 0.25rem;
+  background-color: var(--blue-400);
+  padding: 0.2rem 0.4rem;
+  font-size: 0.8rem;
+}
+
+.food-rating-container {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 1.5rem;
+  width: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 40px;
+  border-top-right-radius: 10px;
+  top: 110px;
+}
+
+@media (max-width: 768px) {
+  /* Adjust the styles for smaller screens */
+  .sidebar-container {
+    width: 100%;
+    padding: 10px;
+    box-shadow: none;
+  }
+
+  .food-content {
+    width: 100%;
+  }
+
+  .food-card {
+    width: calc(50% - 10px);
+    margin: 10px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Adjust the styles for larger screens */
+  .main-container {
+    flex-direction: row; /* Align the sidebar and food content in a row */
+  }
+
+  .sidebar-container {
+    height: auto; /* Set the height of the sidebar container to auto on larger screens */
+    margin-right: 20px; /* Add spacing between the sidebar and food content */
+  }
+
+  .food-content {
+    width: 70%; /* Set the width of the food content to 70% */
+  }
+
+  .food-card {
+    width: calc(
+      33.33% - 20px
+    ); /* Set the width of the content to 33.33% - 20px to accommodate three items in a row */
+  }
+}

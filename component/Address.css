@@ -1,31 +1,35 @@
+/* Header styling for address section */
 .address-header {
   margin-top: 1rem;
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
+/* Container for address elements */
 .address-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  grid-gap: 1.25rem;
-  gap: 1.25rem;
+  grid-gap: 1.25rem; /* Space between items (older property) */
+  gap: 1.25rem; /* Modern gap property */
 }
 
+/* Container for controls (like buttons or options) */
 .controller-container {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2rem; /* Space between child elements */
   width: 90%;
   border: 2px solid #7149c6;
   padding: 0.75rem;
   border-radius: 0.25rem;
-  cursor: pointer;
+  cursor: pointer; /* Makes it clickable */
   margin-top: 1.25rem;
-  margin: auto;
+  margin: auto; /* Center horizontally */
   margin-bottom: 1.2rem;
 }
 
+/* Button styling for adding a new address */
 .add-address-btn {
   padding: 0.5rem 0.75rem;
   font-size: 1rem;
@@ -33,10 +37,5 @@
   background-color: #7149c6;
   color: white;
   border: 0.125rem solid #7149c6;
-  margin: 0;
-}
-
-.add-address-label {
-  font-size: 1.2rem;
   margin: 0;
 }

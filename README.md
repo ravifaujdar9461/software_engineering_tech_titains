@@ -1,4 +1,4 @@
-# Foodidy – Food Delivery Web Application
+# Foodify – Food Delivery Web Application
 
 ## Overview
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-Foodidy is a full-stack food delivery web application that enables users to browse food items, manage orders, and complete secure transactions online. The platform is designed to provide a seamless and responsive user experience across devices.
+Foodify is a full-stack food delivery web application that enables users to browse food items, manage orders, and complete secure transactions online. The platform is designed to provide a seamless and responsive user experience across devices.
 
 ## Features
 
@@ -24,7 +24,7 @@ Foodidy is a full-stack food delivery web application that enables users to brow
 
 ## Project Structure
 
-Foodidy
+Foodify
 ├── frontend        # React application
 ├── backend         # Mock backend with APIs
 ├── components      # Reusable UI components
